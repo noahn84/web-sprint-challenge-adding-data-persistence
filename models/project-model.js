@@ -51,7 +51,7 @@ function addProject(project) {
 }
 
 function addResource(resource) {
-  return db("resources").insert(resource)
+  return db("resources").insert(resource, "id")
 }
 
 function addTask(task) {
